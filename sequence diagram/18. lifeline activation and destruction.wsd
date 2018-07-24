@@ -1,0 +1,37 @@
+@startuml
+participant User
+
+User -> A : Dowork
+activate A
+
+A -> B : << createRequest >>
+activate B
+
+B -> C : Dowork
+activate C
+
+C --> B : WorkDone
+destroy C
+
+B --> A : RequestCreated
+deactivate B
+
+A -> User : Done
+deactivate A
+
+User -> A : DoWork
+activate A #FFBBBB
+
+A -> A : Internal call
+activate A #DarkSalmon
+
+A -> B : << createRequest >>
+activate B
+
+B --> A : RequestCreated
+deactivate B
+deactivate A
+
+A -> User : Done
+deactivate A
+@enduml
