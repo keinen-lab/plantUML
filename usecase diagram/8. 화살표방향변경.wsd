@@ -1,0 +1,11 @@
+@startuml
+:user: --> (Use case 1)
+:user: -> (Use case 2)
+(Use case 1) <.. :user:
+(Use case 2) <- :user:
+
+:user: -left-> (dummyLeft)
+:user: -right-> (dummyRight)
+:user: -up-> (dummyUp)
+:user: -down-> (dummyDown)
+@enduml
