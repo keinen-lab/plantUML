@@ -1,0 +1,3 @@
+@startuml
+Alice -> Alice : this is a signal to self.\nIt also demostrates\nmultiline \ntext
+@enduml
