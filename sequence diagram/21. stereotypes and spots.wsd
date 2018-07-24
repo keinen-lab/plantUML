@@ -1,0 +1,9 @@
+@startuml
+
+skinparam guillemet false
+participant "Famouse Bob" as Bob << Generated >>
+participant Alice << (C, #Add1B2) Testable >>
+
+Bob -> Alice : First message
+
+@enduml
