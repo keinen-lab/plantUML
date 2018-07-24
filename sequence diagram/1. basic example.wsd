@@ -1,0 +1,16 @@
+' 기본 예제
+@startuml
+Alice -> Bob : Authentication Request
+Bob --> Alice : Authentidcation Rqsponse
+
+Alice -> Bob : Another authentication Request
+Alice <-- Bob : Another authentication response
+@enduml
+
+@startuml
+Alice -> Bob : Authentication Request
+Bob --> Alice : Authentidcation Rqsponse
+
+Alice -> Bob : Another authentication Request
+Alice <-- Bob : Another authentication response
+@enduml
