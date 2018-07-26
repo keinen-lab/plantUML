@@ -1,0 +1,12 @@
+@startuml
+Room o- Student
+Room *-- Chair
+
+Student1 -o Room1
+Chari1 --* Room1
+
+foo -left-> dummyLeft
+foo -right-> dummyRight
+foo -up-> dummUp
+foo -down-> dummyDown
+@enduml
