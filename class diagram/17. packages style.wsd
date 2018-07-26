@@ -23,4 +23,16 @@ package foo5 <<Cloud>> {
 package foo6 <<Database>> {
 	class Class6
 }
+
+skinparam packageStyle rectangle
+
+package foo1.foo2 {
+
+}
+
+package foo1.foo2.foo3 {
+	class Object
+}
+
+foo1.foo2 +-- foo1.foo2.foo3
 @enduml
