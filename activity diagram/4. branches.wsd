@@ -10,4 +10,12 @@ else
 --> [Ending process] (*)
 end if
 
+(*) --> "check input"
+if "input is verbose" then
+--> [yes] "turn on verbosity"
+--> "run command"
+else
+--> "run command"
+endif
+--> (*)
 @enduml
