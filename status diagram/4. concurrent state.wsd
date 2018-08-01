@@ -1,0 +1,16 @@
+@startuml
+[*] --> Active
+state Active {
+	[*] -> NumlockOff
+	NumlockOff --> NumlockOn : EvNumLockPressed
+	NumlockOn --> NumlockOff : EvNumlockPressed
+	--
+	[*] -> CapsLockOff
+	CapsLockOff --> CapsLockOn : EvCapsLockPressed
+	CapsLockOn --> CapsLockOff : EvC
+	--
+	[*] -> ScrollLockOff
+	ScrollLockOff --> ScrollLockOn : EvCapsLockPressed
+	ScrollLockOn --> ScrollLockOff : EvCapsLockPressed
+}
+@enduml
