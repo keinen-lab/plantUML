@@ -1,0 +1,12 @@
+@startuml
+[Component] --> Interface1
+[Component] -> Interface2
+
+Interface3 <-- [Component1]
+Interface4 <- [Component1]
+
+[Component2] -left-> left
+[Component2] -right-> right
+[Component2] -up-> up
+[Component2] -down-> down
+@enduml
